@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class GuessANumber
+{
+public static void main (String[]args)
+{
+Scanner input = new Scanner (System.in);
+
+
+double computerNumber = 1+(Math.random() *10);
+double userNumber;
+
+
+System.out.println("Guess between 1 and 10: ");
+userNumber = input.nextDouble();
+
+if (userNumber == computerNumber)
+System.out.println("Correct");
+
+else if (userNumber <= computerNumber)
+System.out.printf("You guessed too low. The correct number is %f\n", computerNumber);
+
+else 
+System.out.printf("Your number is too high. The correct number is %f\n", computerNumber);
+
+}
+}
