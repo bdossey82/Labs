@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CanYouDrink
+{
+public static void main(String [] args)
+{
+		
+Scanner input = new Scanner(System.in);
+
+
+System.out.println("What is your name? ");
+String yourName = input.nextLine();
+
+System.out.println("What is your birth year? ");
+int birthYear = input.nextInt();
+int year = 2016 - birthYear;
+
+
+System.out.println("Hello " + yourName + ", you are " + year + " years-old today!");
+System.out.println();
+
+
+if (year < 21)
+System.out.println("You are not old enough to drink!");
+
+
+else 
+System.out.println("Here's your drink!" );
+}
+}
