@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class YouAreHungry
+{
+public static void main(String[]args)
+{
+
+Scanner input = new Scanner(System.in);
+
+int thirsty;
+
+System.out.println("You are hungry!");
+System.out.println("You get in line!");
+System.out.println("You buy lunch!");
+
+System.out.println("Are you thirsty?(yes = 1, no = 0):");
+thirsty = input.nextInt();
+if (thirsty == 1)
+System.out.println("You are thirsty and you buy a coke!");
+
+System.out.println("You eat your lunch.");
+System.out.println("You return your tray.");
+System.out.println("Leave the eating area!");
+
+}
+}
