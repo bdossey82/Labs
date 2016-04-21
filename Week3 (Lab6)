@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Week3Lab6
+{
+public static void main (String [] args)
+{
+
+int number1, number2, a,b,c,d;
+
+System.out.println ("Enter two numbers:");
+Scanner blake = new Scanner(System.in);
+
+number1 = blake.nextInt();
+number2 = blake.nextInt();
+a = number1 + number2;
+b = number1 - number2;
+c = number1 * number2;
+d = number1 / number2;
+
+System.out.printf("Sum = %d\nDifference = %d\nProduct = %d\nQuotient=%d",a,b,c,d);
+
+}
+}
