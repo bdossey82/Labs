@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class GuessANumber
+{
+public static void main(String[]args)
+{
+
+Scanner blake = new Scanner(System.in);
+
+int computerNumber;
+int guess;
+
+System.out.println("Guess a number between 1 and 100:");
+guess = blake.nextInt();
+
+if (guess < 0 || guess > 100)
+{
+
+System.out.println("Not a valid number. System crash");
+System.exit(0);
+}
+
+computerNumber = 1 + (int)(Math.random()*100);
+System.out.println(computerNumber);
+
+if (computerNumber == guess)
+System.out.println("Correct!");
+
+if (computerNumber < guess)
+System.out.println("Too high");
+
+if (computerNumber > guess)
+System.out.println("Too low");
+
+}
+}
