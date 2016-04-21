@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class GuessANumber
+{
+public static void main (String[]args)
+{
+
+int guess, computer;
+computer = 1 + (int)(Math.random()*10); 
+guess = Integer.parseInt(JOptionPane.showInputDialog("Guess a number between 1 and 10")); 
+String message;
+
+if (guess < 0 || guess > 10)
+JOptionPane.showInputDialog("Invalid number");
+
+if (guess == computer)
+JOptionPane.showInputDialog("Correct!");
+
+if (guess < computer)
+JOptionPane.showInputDialog("Too low");
+
+if (guess > computer) 
+JOptionPane.showInputDialog("Too high");
+
+}
+}
