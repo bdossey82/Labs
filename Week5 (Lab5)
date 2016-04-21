@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class GuessNumbers
+{
+public static void main (String[]args)
+{
+Scanner in = new Scanner(System.in);
+
+int x;
+int guess;
+
+System.out.println ("Guess a number:");
+guess = in.nextInt();
+
+if (guess < 0 || guess > 9)
+{
+System.out.println ("Not a valid number. Crash");
+System.exit(0);
+}
+
+
+x = 0 + (int) (Math.random() *10);
+System.out.println(x);
+
+
+if (x == guess)
+System.out.println("Correct!");
+
+else if (x < guess)
+System.out.println("Too high.");
+
+else
+System.out.println("Too low.");
+
+}
+}
