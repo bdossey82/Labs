@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class DiceTwoTest
+{
+public static void main(String[]args)
+{
+
+Scanner input = new Scanner(System.in);
+
+ThreeDice dice = new ThreeDice();
+DiceTwo superDice = newDiceTwo();
+
+System.out.println(dice.Throw());
+System.out.print(superDice.Throw());
+
+}
+}
