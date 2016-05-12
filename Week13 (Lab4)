@@ -1,4 +1,4 @@
-public class ThreeDice
+public class ThreeDice4 extends ThreeDice
 {
 
 @Override
