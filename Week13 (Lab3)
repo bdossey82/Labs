@@ -7,7 +7,7 @@ public static void main(String[]args)
 
 Scanner input = new Scanner(System.in);
 
-ThreeDice dice = new ThreeDice();
+TrippleDice dice = new TrippleDice();
 DiceTwo superDice = newDiceTwo();
 
 System.out.println(dice.Throw());
