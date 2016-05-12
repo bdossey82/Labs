@@ -1,0 +1,23 @@
+public class DiceTwo
+{
+
+public int Throw()
+
+{
+int randomNumber = 1 + (int)(Math.random() * 6);
+return randomNumber;
+}
+
+
+public static int Throw(int dices)
+{
+int diceNumber = dices * (1 + (int)(Math.random() * 6));
+return diceNumber;
+}
+
+public static int Throw (int dices, int bounces)
+{
+int diceNumber = ((dices * (1 + (int)(Math.random() *))) * bounces) / bounces;
+return diceNumber;
+}
+}
