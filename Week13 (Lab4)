@@ -1,4 +1,4 @@
-public class TrippleDice extends ThreeDice
+public class TrippleDice extends DiceTwo
 {
 
 @Override
